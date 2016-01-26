@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		978BFE701C57A24300B58C8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 978BFE6F1C57A24300B58C8E /* AppDelegate.m */; };
+		978BFE701C57A24300B58C8E /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 978BFE6F1C57A24300B58C8E /* AppDelegate.mm */; };
 		978BFE721C57A24300B58C8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 978BFE711C57A24300B58C8E /* main.m */; };
 		978BFE741C57A24300B58C8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978BFE731C57A24300B58C8E /* Images.xcassets */; };
 		978BFE771C57A24300B58C8E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978BFE751C57A24300B58C8E /* MainMenu.xib */; };
@@ -29,7 +29,7 @@
 		978BFE691C57A24300B58C8E /* democalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = democalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978BFE6D1C57A24300B58C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978BFE6E1C57A24300B58C8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		978BFE6F1C57A24300B58C8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		978BFE6F1C57A24300B58C8E /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		978BFE711C57A24300B58C8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		978BFE731C57A24300B58C8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		978BFE761C57A24300B58C8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				978BFE6E1C57A24300B58C8E /* AppDelegate.h */,
-				978BFE6F1C57A24300B58C8E /* AppDelegate.m */,
+				978BFE6F1C57A24300B58C8E /* AppDelegate.mm */,
 				978BFE731C57A24300B58C8E /* Images.xcassets */,
 				978BFE751C57A24300B58C8E /* MainMenu.xib */,
 				978BFE6C1C57A24300B58C8E /* Supporting Files */,
@@ -217,7 +217,7 @@
 			files = (
 				97F189FA1C57A6A90014C832 /* Demo.cpp in Sources */,
 				978BFE721C57A24300B58C8E /* main.m in Sources */,
-				978BFE701C57A24300B58C8E /* AppDelegate.m in Sources */,
+				978BFE701C57A24300B58C8E /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

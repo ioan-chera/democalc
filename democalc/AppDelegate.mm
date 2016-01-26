@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#include "Demo.h"
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *window;
@@ -41,10 +42,22 @@
 
     self.label.stringValue = demoURL.path;
 
-    const uint8_t *data = [ddata bytes];
+    const uint8_t *data = static_cast<const uint8_t *>([ddata bytes]);
     size_t len = [ddata length];
 
-    // TODO: process this info
+    try
+    {
+        Demo demo(data, len);
+    }
+    catch(const Demo::Exception &e)
+    {
+        NSAlert *alert = [[NSAlert alloc] init];
+        alert.messageText = @"Demo error";
+        alert.informativeText = [NSString stringWithUTF8String:e.message().c_str()];
+        [alert addButtonWithTitle:@"Fine"];
+        [alert beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse returnCode) {
+        }];
+    }
 
 }
 
